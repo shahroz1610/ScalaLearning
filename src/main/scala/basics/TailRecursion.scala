@@ -12,6 +12,7 @@ object TailRecursion {
     else smartFactorial(num-1, accumulator*num)
   }
 
+  @tailrec
   def smartConcat(s: String, noOfTimes: Int, accumulator: String): String = {
     if (noOfTimes <= 0) accumulator
     else smartConcat(s, noOfTimes-1, accumulator+s)
